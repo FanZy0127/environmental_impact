@@ -4,3 +4,4 @@ venv
 .idea/
 .vscode/
 .env
+__pycache__/

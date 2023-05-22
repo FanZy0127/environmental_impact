@@ -12,9 +12,14 @@ class Settings:
     """ retrieving keys and adding them to the project
     from the .env file through their key names
     """
-    
+
     # FETCH DATASET
-    DATASETS_PATH = os.getenv("DATASETS_PATH")
+    MODULES_TO_DATASETS_PATH = os.getenv("MODULES_TO_DATASETS_PATH")
+
+    DATA_EU_AIR_F1_1 = os.getenv("DATA_EU_AIR_F1_1")
+    DATA_EU_AIR_F1_2 = os.getenv("DATA_EU_AIR_F1_2")
+    DATA_EU_AIR_F1_3 = os.getenv("DATA_EU_AIR_F1_3")
+    DATA_EU_AIR_F1_4 = os.getenv("DATA_EU_AIR_F1_4")
     
 
 settings = Settings()

@@ -14,6 +14,8 @@ class Settings:
     """
 
     # FETCH DATASET
+    MODULES_TO_DATASETS_PATH = os.getenv("MODULES_TO_DATASETS_PATH")
+
     DATA_EU_AIR_F1_1 = os.getenv("DATA_EU_AIR_F1_1")
     DATA_EU_AIR_F1_2 = os.getenv("DATA_EU_AIR_F1_2")
     DATA_EU_AIR_F1_3 = os.getenv("DATA_EU_AIR_F1_3")

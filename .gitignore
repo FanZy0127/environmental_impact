@@ -1,3 +1,4 @@
 datasets
 venv
+.env
 .python-version

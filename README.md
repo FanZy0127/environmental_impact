@@ -10,8 +10,6 @@ Avec les évolutions constatées du changement climatique au niveau planétaire,
 Avec ce projet, nous voulons ainsi mesurer cet impact via différent indicateurs comme la qualité de l'air, la contamination des sols, la pollution de l'eau, et.... Pour cela, nous nous servons d'algorithmes de machine learning pour prédire l'évolution de la quantité de polluants et de la classification pour mesurer le degré de menace.
 
 
-
-
 ## Installation
 
 - `source venv/bin/activate` or `venv/Scripts/activate`     
@@ -19,6 +17,11 @@ Avec ce projet, nous voulons ainsi mesurer cet impact via différent indicateurs
 - `pip freeze > requirements.txt`       
                 
 Dans un dossier datasets à la racine du projet, uploadez les différents fichiers .csv que vous pourrez trouver via ce [lien](https://www.eea.europa.eu/data-and-maps/data/industrial-reporting-under-the-industrial-7).
+
+
+## Démarche
+
+Après avoir récupéré notre dataset, nous avons pris du temps pour l'étudier en commencant par les émissions de polluants pour environ 29223 entreprise européenne.           
 
 
 ## Liens

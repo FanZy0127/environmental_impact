@@ -21,28 +21,57 @@ class Settings:
     DATA_EU_AIR_F1_3 = os.getenv("DATA_EU_AIR_F1_3")
     DATA_EU_AIR_F1_4 = os.getenv("DATA_EU_AIR_F1_4")
 
-    CO2_CO2_Factor_Equivalence_20_Years = 1
-
-    # CO2 Factor Equivalence on a 100 years base
-    CH4_CO2_Factor_Equivalence_100_Years = 25
-    N2O_CO2_Factor_Equivalence_100_Years = 298
-    HCFCs_CO2_Factor_Equivalence_100_Years = 0
-    Cr_CO2_Factor_Equivalence_100_Years = 0
-    Zn_CO2_Factor_Equivalence_100_Years = 0
-    Cu_CO2_Factor_Equivalence_100_Years = 0
-    Pb_CO2_Factor_Equivalence_100_Years = 0
-    NH3_CO2_Factor_Equivalence_100_Years = 0
-    Benzene_CO2_Factor_Equivalence_100_Years = 0
-    DCM_CO2_Factor_Equivalence_100_Years = 0
-    Cd_CO2_Factor_Equivalence_100_Years = 0
-    Ni_CO2_Factor_Equivalence_100_Years = 0
-    Teq_CO2_Factor_Equivalence_100_Years = 0
-    HFCS_CO2_Factor_Equivalence_100_Years = 0
-    HCl_CO2_Factor_Equivalence_100_Years = 0
-    As_CO2_Factor_Equivalence_100_Years = 0
-    HF_CO2_Factor_Equivalence_100_Years = 0
-    CO2_Excluding_Biomass_CO2_Factor_Equivalence_100_Years = 1
-    CFCs_CO2_Factor_Equivalence_100_Years = 0
-
+    GWP = {
+        '1,2-dichloroethane (DCE-1,2)' : 0,
+        'Non-methane volatile organic compounds (NMVOC)' : 0,
+        'Carbon dioxide (CO2)' : 1, 
+        'Nitrogen oxides (NOX)' : 0,
+        'Sulphur oxides (SOX)' : 0, 
+        'Zinc and compounds (as Zn)' : 0,
+        'Carbon monoxide (CO)' : 0, 
+        'Methane (CH4)' : 25,
+        'Mercury and compounds (as Hg)' : 0, 
+        'Hydrogen cyanide (HCN)' : 0,
+        'Particulate matter (PM10)' : 0, 
+        'Nitrous oxide (N2O)' : 298,
+        'Hydrochlorofluorocarbons (HCFCs)' : 0,
+        'Chromium and compounds (as Cr)' : 0, 
+        'Copper and compounds (as Cu)' : 0,
+        'Lead and compounds (as Pb)' : 0,
+        'Chlorine and inorganic compounds (as HCl)' : 0, 
+        'Ammonia (NH3)' : 0,
+        'Benzene' : 0, 
+        'Polycyclic aromatic hydrocarbons (PAHs)' : 0,
+        'Dichloromethane (DCM)' : 0, 
+        'Cadmium and compounds (as Cd)' : 0,
+        'Nickel and compounds (as Ni)' : 0,
+        'PCDD + PCDF (dioxins + furans) (as Teq)' : 0,
+        'Hydro-fluorocarbons (HFCS)' : 2448,  # Moyenne de 19 gaz
+        'Fluorine and inorganic compounds (as HF)' : 0, 
+        'Naphthalene' : 0,
+        'Arsenic and compounds (as As)' : 0, 
+        'Sulphur hexafluoride (SF6)' : 22800,
+        'Trichloroethylene (TRI)' : 0, 
+        'Perfluorocarbons (PFCs)' : 10098,  # Moyenne de 9 gaz
+        'Anthracene' : 0,
+        'Benzo(g,h,i)perylene' : 0, 
+        'Polychlorinated biphenyls (PCBs)' : 0,
+        'Chlorofluorocarbons (CFCs)' : 6226,  # 2021
+        'Di-(2-ethyl hexyl) phthalate (DEHP)' : 0, 
+        'Vinyl chloride' : 0,
+        'Tetrachloroethylene' : 0, 
+        'Halons' : 0, 
+        'Tetrachloromethane (TCM)' : 0,
+        'Trichloromethane' : 0, 
+        'Ethylene oxide' : 0,
+        'Carbon dioxide (CO2) excluding biomass' : 1,
+        'Total organic carbon(as total C or COD/3) (TOC)' : 0,
+        '1,1,1-trichloroethane (TCE-1,1,1)' : 0,
+        '1,1,2,2-tetrachloroethane (TETRACHLOROETHANE-1,1,2,2)' : 0,
+        'Trichlorobenzenes (TCB)' : 0, 
+        'Phenols (as total C)' : 0,
+        'Fluorides (as total F)' : 0, 
+        'Fluoranthene' : 0
+    }
 
 settings = Settings()

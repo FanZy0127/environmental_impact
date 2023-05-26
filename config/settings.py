@@ -21,6 +21,11 @@ class Settings:
     DATA_EU_AIR_F1_3 = os.getenv("DATA_EU_AIR_F1_3")
     DATA_EU_AIR_F1_4 = os.getenv("DATA_EU_AIR_F1_4")
 
+    DATA_EU_ENERGY_F5_1 = os.getenv("DATA_EU_ENERGY_F5_1")
+    DATA_EU_ENERGY_F5_2 = os.getenv("DATA_EU_ENERGY_F5_2")
+    DATA_EU_INFORMATION_F6_1 = os.getenv("DATA_EU_INFORMATION_F6_1")
+    DATA_EU_INFORMATION_F7_1 = os.getenv("DATA_EU_INFORMATION_F7_1")
+
     GWP = {
         '1,2-dichloroethane (DCE-1,2)' : 0,
         'Non-methane volatile organic compounds (NMVOC)' : 0,

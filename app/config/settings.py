@@ -5,6 +5,7 @@ class Settings(BaseSettings):
     air_dataset: str
     models_path: str
     models_kmeans_names: str
+    models_random_name: str
 
     class Config:
         env_file = ".env"

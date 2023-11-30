@@ -38,9 +38,9 @@ Exemple de données en entrée pour */api/classify* :
 }
 ```           
 
-Le dossier F1_4 peut être trouvé sur ce [lien](https://sdi.eea.europa.eu/data/3da7d329-beea-4a7b-89bc-d45fc1c4b8ac?path=%2FCSV).          
-
-Dans le dossier *datasets/european_companies/CSV* à la racine du projet, les différents fichiers .csv doivent être présents, ces fichiers peuvent être trouvés sur ce [lien](https://sdi.eea.europa.eu/data/3da7d329-beea-4a7b-89bc-d45fc1c4b8ac?path=%2FCSV).       
+Le dossier F1_4 peut être trouvé sur ce [lien](https://sdi.eea.europa.eu/data/3da7d329-beea-4a7b-89bc-d45fc1c4b8ac?path=%2FCSV).           
+      
+Pour exécuter les notebooks, vous devez avoir dans le dossier *datasets/european_companies/CSV* à la racine du projet, les différents fichiers .csv, qui doivent être présents. Ces fichiers peuvent être trouvés sur ce [lien](https://sdi.eea.europa.eu/data/3da7d329-beea-4a7b-89bc-d45fc1c4b8ac?path=%2FCSV). Une alternative est de simplement dézipper le dossier *Dataset_EAE.zip*, qui se trouve également dans *datasets/european_companies/CSV*.                 
 
 
 ## Liens                  

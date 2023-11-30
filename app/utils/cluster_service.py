@@ -34,10 +34,10 @@ class ClusterService:
         """
         Prépare les données pour le clustering en supprimant les colonnes non nécessaires et en déterminant les colonnes de polluants.
         """
-        # Supprimer les colonnes non nécessaires pour le clustering
+        # Suppression des colonnes non nécessaires pour le clustering
         df_dropped = df.drop(columns=["FacilityInspireID", "reportingYear"])
         
-        # Récupérer les noms des colonnes des features de pollutant
+        # Récupération des noms des colonnes des features de pollutant
         pollutant_cols = [col for col in df_dropped.columns if col not in ["eprtrSectorName", "FacilityInspireID", "reportingYear", "cluster"]]
         
         return df_dropped, pollutant_cols
@@ -54,7 +54,7 @@ class ClusterService:
 
             best_params = self.find_optimal_params(scaled_data)
 
-            # Appliquer KMeans avec les meilleurs paramètres trouvés
+            # Application de KMeans avec les meilleurs paramètres trouvés
             final_model = KMeans(**best_params)
             final_model.fit(scaled_data)
 

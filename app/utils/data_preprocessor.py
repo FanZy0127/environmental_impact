@@ -5,7 +5,7 @@ class DataPreprocessor:
     def __pollutant_features(d_frame: pd.DataFrame) -> pd.DataFrame:
         df_pivoted = d_frame\
             .pivot_table(
-                index=["FacilityInspireID", "reportingYear"],
+                index=["FacilityInspireID", "reportingYear", "EPRTRSectorCode"],
                 columns="pollutant",
                 values="emissions",
                 aggfunc="sum")\
@@ -17,7 +17,7 @@ class DataPreprocessor:
     
     @staticmethod
     def __df_with_pollutant_features(df_unique: pd.DataFrame, df_pollutant: pd.DataFrame) -> pd.DataFrame:
-        return pd.merge(df_unique, df_pollutant, on=["FacilityInspireID", "reportingYear"], how="left")
+        return pd.merge(df_unique, df_pollutant, on=["FacilityInspireID", "reportingYear", "EPRTRSectorCode"], how="left")
 
     @staticmethod
     def __drop_columns(d_frame: pd.DataFrame) -> pd.DataFrame:
@@ -33,7 +33,7 @@ class DataPreprocessor:
     def preprocess(self, data: pd.DataFrame) -> pd.DataFrame:
         data_copy = data.copy()
 
-        df_unique = data_copy.drop_duplicates(subset=["FacilityInspireID", "reportingYear"])
+        df_unique = data_copy.drop_duplicates(subset=["FacilityInspireID", "reportingYear", "EPRTRSectorCode"])
         df_unique = df_unique.drop(columns=["pollutant", "emissions"])
 
         df_pollutant = self.__pollutant_features(data_copy)

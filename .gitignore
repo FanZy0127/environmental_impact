@@ -1,8 +1,0 @@
-datasets
-venv
-.python-version
-.idea/
-.vscode/
-.env
-__pycache__/
-*.joblib
